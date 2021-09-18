@@ -1,0 +1,34 @@
+Locators By - id, name, class name, xpath, css and link text
+
+id -
+find element by id attribute 'value'
+
+name -
+find element by name attribute 'value'
+
+class -
+find element by class attribute 'value' Note: If multiple classes are present, specify one of the class only.
+
+link text -
+complete link text --> find element by link text Note: tagname for any links should be tagged as "a", if not that is not link text
+partial link text --> find element by partial link text Note: tagname for any links should be tagged as "a", if not that is not link text
+
+css selector -
+tagname[attribute='value']  Note: tagname is optional
+If ID is present then --> tagname#id Note: tagname is optional
+If class name is present then --> tagname.class Note: tagname is optional
+using contains text by CSS --> tagname[attribute*='value'] Note: tagname is optional
+
+xpath -
+//tagname[attribute='value'] Note: tagname is optional
+using contains text by xpath --> //tagname[contains(@attribute,'value')] Note: tagname is optional
+using text by xpath --> //tagname[text()='value'] Note: this can be used for text or link text or any
+
+Parent -- Child Traverse
+=========================
+
+using xpath --
+//tagname_parent[attribute='value']/tagname_child
+
+using css selector --
+//tagname_parent[attribute='value'] tagname_child Note: There is an SPACE between tagname_parent and tagname_child

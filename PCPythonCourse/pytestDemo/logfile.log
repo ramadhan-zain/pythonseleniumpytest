@@ -1,0 +1,12 @@
+2021-09-18 14:25:21,052: INFO: <pytestDemo.BaseClass> : firstname
+2021-09-18 14:25:21,052: INFO: <pytestDemo.BaseClass> : vedge.id
+2021-09-18 14:26:12,715: INFO: <test_edit_profile> : firstname
+2021-09-18 14:26:12,715: INFO: <test_edit_profile> : vedge.id
+2021-09-18 14:26:55,081: INFO: <get_logger> : firstname
+2021-09-18 14:26:55,081: INFO: <get_logger> : vedge.id
+2021-09-18 14:27:22,325: INFO: <test_edit_profile> : firstname
+2021-09-18 14:27:22,325: INFO: <test_edit_profile> : vedge.id
+2021-09-18 14:27:22,326: CRITICAL: <pytestDemo.test_logging> : Critical issue
+2021-09-18 14:29:39,282: INFO: <test_edit_profile> : firstname
+2021-09-18 14:29:39,282: INFO: <test_edit_profile> : vedge.id
+2021-09-18 14:29:39,283: CRITICAL: <pytestDemo.test_logging> : Critical issue
