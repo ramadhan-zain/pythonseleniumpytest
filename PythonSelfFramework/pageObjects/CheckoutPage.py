@@ -1,6 +1,9 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
+from pageObjects.ConfirmPage import ConfirmPage
+
+
 class CheckoutPage:
 
     def __init__(self, driver, wait):
@@ -22,7 +25,8 @@ class CheckoutPage:
         self.driver.find_element(*CheckoutPage.checkout_button).click()
 
     def click_checkout_final(self):
-        return self.wait.until(EC.presence_of_element_located(*CheckoutPage.checkout_button_final))
-
+        self.wait.until(EC.presence_of_element_located((CheckoutPage.checkout_button_final))).click()
+        confirm_page = ConfirmPage(self.driver, self.wait)
+        return confirm_page
 
 

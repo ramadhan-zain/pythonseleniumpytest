@@ -37,16 +37,19 @@ class TestOne(BaseClass):
         # wait.until(EC.presence_of_element_located(
         #     (By.XPATH, "//a[@class='nav-link btn btn-primary']"))).click()
         # driver.find_element_by_css_selector("button[class='btn btn-success']").click()
+        # driver.get_screenshot_as_file("screenshot.png")
 
-        checkout_page.click_checkout_final().click()
+        confirm_page = checkout_page.click_checkout_final()
 
-        driver.find_element_by_id("country").send_keys("ind")
+        # driver.find_element_by_id("country").send_keys("ind")
+        # wait.until(EC.presence_of_element_located((By.LINK_TEXT, "Indonesia"))).click()
+        confirm_page.select_country()
+        # driver.find_element_by_css_selector("div[class*='checkbox']").click()
+        confirm_page.get_checkbox().click()
+        # driver.find_element_by_css_selector("[type='submit']").click()
+        confirm_page.click_submit()
 
-        wait.until(EC.presence_of_element_located((By.LINK_TEXT, "Indonesia"))).click()
-        driver.find_element_by_css_selector("div[class*='checkbox']").click()
-        driver.find_element_by_css_selector("[type='submit']").click()
-
-        success_message = driver.find_element_by_css_selector("div[class*='alert-success']").text
+        success_message = confirm_page.get_success_message_text()
         print(success_message)
 
         assert "Success! Thank you!" in success_message
