@@ -9,11 +9,13 @@ from utilities.BaseClass import BaseClass
 
 class TestHomePage(BaseClass):
     def test_form_submission(self, get_data):
+        log = self.get_logger()
         driver = self.driver
         wait = self.wait
 
         homepage = HomePage(driver, wait)
 
+        log.info(f"first name is {get_data['first name']}")
         # driver.find_element_by_name("name").send_keys("Name sent by automation")
         homepage.get_name().send_keys(get_data["first name"])
 
