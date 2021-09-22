@@ -56,7 +56,7 @@ class TestOne(BaseClass):
         log.info(f"success message received is {success_message}")
         print(success_message)
 
-        assert "Success! Thank you!" in success_message
+        assert "Success! blabla Thank you!" in success_message
 
         driver.get_screenshot_as_file("screenshot.png")
 

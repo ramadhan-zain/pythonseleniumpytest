@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 21-Sep-2021 at 17:48:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 22-Sep-2021 at 14:59:22 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,8 +259,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 8.21 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 10.77 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -271,15 +271,45 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
+          <td class="col-result">Failed</td>
           <td class="col-name">testCases/test_e2e.py::TestOne::test_e2e</td>
-          <td class="col-duration">8.19</td>
+          <td class="col-duration">8.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>blackberry found!
+            <div><div><img src="testCases/test_e2e.py_TestOne_test_e2e.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;testCases.test_e2e.TestOne object at 0x00000267AE333D00&gt;, setup = None<br/><br/>    def test_e2e(self, setup):<br/>        log = self.get_logger()<br/>        driver = self.driver<br/>        wait = self.wait<br/>        home_page = HomePage(driver, wait)<br/>        checkout_page = home_page.shop_items()<br/>        # driver.find_element_by_css_selector(&quot;a[href*=&#x27;shop&#x27;]&quot;).click()<br/>    <br/>        # checkoutPage = CheckoutPage(driver)<br/>        log.info(&quot;getting all the card titles&quot;)<br/>        products = checkout_page.get_card_title()<br/>        # products = driver.find_elements_by_xpath(&quot;//div[@class=&#x27;card h-100&#x27;]&quot;)<br/>        # /div/h4/a<br/>        # //div[@class=&#x27;card h-100&#x27;]<br/>        for product in products:<br/>            # product_name = checkout_page.get_productname_text()<br/>            product_name = product.find_element_by_xpath(&quot;div/h4/a&quot;).text<br/>            log.info(product_name)<br/>            if product_name == &quot;Blackberry&quot;:<br/>                print(&quot;blackberry found!&quot;)<br/>                # div[2]/button<br/>                # div/button<br/>                product.find_element_by_xpath(&quot;div/button&quot;).click()<br/>    <br/>        checkout_page.click_checkout()<br/>        # driver.find_element_by_css_selector(&quot;a[class*=&#x27;btn-primary&#x27;]&quot;)<br/>    <br/>        # driver.find_element_by_xpath(&quot;//a[@class=&#x27;nav-link btn btn-primary&#x27;]&quot;).click()<br/>        # wait.until(EC.presence_of_element_located(<br/>        #     (By.XPATH, &quot;//a[@class=&#x27;nav-link btn btn-primary&#x27;]&quot;))).click()<br/>        # driver.find_element_by_css_selector(&quot;button[class=&#x27;btn btn-success&#x27;]&quot;).click()<br/>        # driver.get_screenshot_as_file(&quot;screenshot.png&quot;)<br/>    <br/>        confirm_page = checkout_page.click_checkout_final()<br/>    <br/>        # driver.find_element_by_id(&quot;country&quot;).send_keys(&quot;ind&quot;)<br/>        # wait.until(EC.presence_of_element_located((By.LINK_TEXT, &quot;Indonesia&quot;))).click()<br/>        log.info(&quot;selecting country name as Indonesia&quot;)<br/>        confirm_page.select_country()<br/>        # driver.find_element_by_css_selector(&quot;div[class*=&#x27;checkbox&#x27;]&quot;).click()<br/>        confirm_page.get_checkbox().click()<br/>        # driver.find_element_by_css_selector(&quot;[type=&#x27;submit&#x27;]&quot;).click()<br/>        confirm_page.click_submit()<br/>    <br/>        success_message = confirm_page.get_success_message_text()<br/>        log.info(f&quot;success message received is {success_message}&quot;)<br/>        print(success_message)<br/>    <br/>&gt;       assert &quot;Success! blabla Thank you!&quot; in success_message<br/><span class="error">E       AssertionError: assert &#x27;Success! blabla Thank you!&#x27; in &#x27;×\nSuccess! Thank you! Your order will be delivered in next few weeks :-).&#x27;</span><br/><br/>testCases\test_e2e.py:59: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>blackberry found!
 ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
-<br/></div></td></tr></tbody></table></body></html>
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_e2e:test_e2e.py:20 getting all the card titles
+INFO     test_e2e:test_e2e.py:28 iphone X
+INFO     test_e2e:test_e2e.py:28 Samsung Note 8
+INFO     test_e2e:test_e2e.py:28 Nokia Edge
+INFO     test_e2e:test_e2e.py:28 Blackberry
+INFO     test_e2e:test_e2e.py:48 selecting country name as Indonesia
+INFO     test_e2e:test_e2e.py:56 success message received is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_HomePage.py::TestHomePage::test_form_submission[get_data0]</td>
+          <td class="col-duration">2.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>×
+Success! The Form has been submitted successfully!.
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_form_submission:test_HomePage.py:18 first name is firstname<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_HomePage.py::TestHomePage::test_form_submission[get_data1]</td>
+          <td class="col-duration">0.30</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>×
+Success! The Form has been submitted successfully!.
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_form_submission:test_HomePage.py:18 first name is firstname1<br/></div></td></tr></tbody></table></body></html>

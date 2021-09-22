@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
+driver = None
+
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -13,6 +15,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
+    global driver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         driver = webdriver.Chrome(executable_path=r"E:\PythonTestingCourse\chromedriver.exe")
@@ -54,6 +57,6 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-        driver.get_screenshot_as_file(name)
+    driver.get_screenshot_as_file(name)
 
 
