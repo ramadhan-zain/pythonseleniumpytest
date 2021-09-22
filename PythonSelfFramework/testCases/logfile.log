@@ -36,3 +36,47 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2021-09-22 11:13:28,854: INFO: <test_e2e> : selecting country name as Indonesia
 2021-09-22 11:13:34,032: INFO: <test_e2e> : success message received is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-09-22 16:42:43,279: INFO: <test_form_submission> : first name is firstname
+2021-09-22 16:42:43,587: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:42:43,587: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:42:46,694: INFO: <test_e2e> : getting all the card titles
+2021-09-22 16:42:46,712: INFO: <test_e2e> : iphone X
+2021-09-22 16:42:46,723: INFO: <test_e2e> : Samsung Note 8
+2021-09-22 16:42:46,734: INFO: <test_e2e> : Nokia Edge
+2021-09-22 16:42:46,745: INFO: <test_e2e> : Blackberry
+2021-09-22 16:42:46,831: INFO: <test_e2e> : selecting country name as Indonesia
+2021-09-22 16:42:52,005: INFO: <test_e2e> : success message received is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-09-22 16:48:00,445: INFO: <test_form_submission> : first name is firstname
+2021-09-22 16:48:00,753: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:48:00,753: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:48:03,898: INFO: <test_e2e> : getting all the card titles
+2021-09-22 16:48:03,917: INFO: <test_e2e> : iphone X
+2021-09-22 16:48:03,928: INFO: <test_e2e> : Samsung Note 8
+2021-09-22 16:48:03,939: INFO: <test_e2e> : Nokia Edge
+2021-09-22 16:48:03,950: INFO: <test_e2e> : Blackberry
+2021-09-22 16:48:04,035: INFO: <test_e2e> : selecting country name as Indonesia
+2021-09-22 16:48:09,213: INFO: <test_e2e> : success message received is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-09-22 16:53:39,891: INFO: <test_form_submission> : first name is firstname
+2021-09-22 16:53:40,210: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:53:40,210: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 16:53:43,360: INFO: <test_e2e> : getting all the card titles
+2021-09-22 16:53:43,379: INFO: <test_e2e> : iphone X
+2021-09-22 16:53:43,390: INFO: <test_e2e> : Samsung Note 8
+2021-09-22 16:53:43,401: INFO: <test_e2e> : Nokia Edge
+2021-09-22 16:53:43,412: INFO: <test_e2e> : Blackberry
+2021-09-22 16:53:43,497: INFO: <test_e2e> : selecting country name as Indonesia
+2021-09-22 16:53:48,669: INFO: <test_e2e> : success message received is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-09-22 17:02:09,159: INFO: <test_form_submission> : first name is firstname
+2021-09-22 17:02:09,485: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 17:02:09,485: INFO: <test_form_submission> : first name is firstname1
+2021-09-22 17:02:12,497: INFO: <test_e2e> : getting all the card titles
+2021-09-22 17:02:12,515: INFO: <test_e2e> : iphone X
+2021-09-22 17:02:12,526: INFO: <test_e2e> : Samsung Note 8
+2021-09-22 17:02:12,537: INFO: <test_e2e> : Nokia Edge
+2021-09-22 17:02:12,548: INFO: <test_e2e> : Blackberry
+2021-09-22 17:02:12,633: INFO: <test_e2e> : selecting country name as Indonesia
+2021-09-22 17:02:17,808: INFO: <test_e2e> : success message received is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
