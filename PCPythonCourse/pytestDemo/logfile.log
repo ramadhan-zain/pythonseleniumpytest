@@ -10,3 +10,6 @@
 2021-09-18 14:29:39,282: INFO: <test_edit_profile> : firstname
 2021-09-18 14:29:39,282: INFO: <test_edit_profile> : vedge.id
 2021-09-18 14:29:39,283: CRITICAL: <pytestDemo.test_logging> : Critical issue
+2021-09-18 14:47:46,966: INFO: <test_edit_profile> : firstname
+2021-09-18 14:47:46,966: INFO: <test_edit_profile> : vedge.id
+2021-09-18 14:47:46,968: CRITICAL: <pytestDemo.test_logging> : Critical issue
