@@ -80,3 +80,4 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2021-09-22 17:02:12,633: INFO: <test_e2e> : selecting country name as Indonesia
 2021-09-22 17:02:17,808: INFO: <test_e2e> : success message received is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-09-24 10:19:41,254: INFO: <test_form_submission> : first name is ramadhan
